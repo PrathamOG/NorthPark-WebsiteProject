@@ -1,0 +1,42 @@
+<html>
+
+<head>
+<!-- Linking the page to the CSS and Calender template -->
+    <title>Home Page</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="evo-calendar.min.css">
+</head>
+
+<body>
+    
+<!-- Making div classes to help in CSS -->
+    <div class="background">
+    <!-- Adding a title to the page while changing its text color and aligning it to the middle using style -->
+        <h1 style="font-size:50px;text-align: center; color: rgb(0, 0, 0);" >Home Page</h1>
+        <div class="container">
+        <!-- Adding pictures for the teacher and student buttons -->
+            <a href="login.html">
+                <img src="imgbin_computer-icons-teacher-png.png" style="width:100%">
+               </a>
+            <!-- Using blank divs to space out the pictures show they are spaced evenly in CSS -->
+            <div></div>
+            <div></div>
+            <div></div>
+            <a href="studentoption.html">
+                <img src="Daco_1566120.png" style="width:100%">
+               </a>
+               </div>
+        <div id="calendar"></div>
+    </div>
+    <!-- Linking the Calender file to this file to display the calendar -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="evo-calendar.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#calendar').evoCalendar({
+            })
+        })
+    </script>
+</body>
+
+</html>

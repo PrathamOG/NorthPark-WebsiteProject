@@ -1,0 +1,30 @@
+<html>
+
+<head>
+  <!-- Linking the CSS and JS pages -->
+  <title>Login</title>
+  <link rel="stylesheet" href="login.css">
+  <script defer src="login.js"></script>
+</head>
+
+<body>
+  <!-- Creating seperate id for the main holder and adding a title -->
+  <main id="main-holder">
+    <h1 id="login-header">Teacher Login</h1>
+    <!-- Adding a teacher image for some design -->
+    <img src="imgbin_computer-icons-teacher-png.png" width="128" height="128">
+    <!-- Creating a form for username and password input -->
+    <form id="login-form">
+      <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
+      <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+      <input type="submit" value="Login" id="login-form-submit">
+    </form>
+    <!-- Adding an error message when there is a wrong input given -->
+    <div id="login-error-msg-holder">
+        <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+      </div>
+  
+  </main>
+</body>
+
+</html>

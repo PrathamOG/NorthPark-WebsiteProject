@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<!-- Creating a title for the page and linking the css file to this file -->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>studentviewer.it</title>
+	<link href="studentview.css" rel="stylesheet" type="text/css" />
+</head>
+
+</html>
+<html>
+
+<body>
+	<!-- Creating seperate input areas for the three categories which will show what the student chose -->
+
+  <head>
+    <div class="background">
+      <h1 style="text-align:center; font-size: 50px;">Student View Page</h1>
+    <!-- intializing the function from the javascript page and creating a text area for the announcemnts to be shown -->
+      <div class="textarea">
+        <!-- Onlading a function from the JS file -->
+        <body onload = "displayAnnouncement()">
+        <!-- Creating a text area -->
+          <textarea id="studentResults" rows = "30" cols= "260"></textarea>
+        <!-- Adding pictures as buttons with action tag -->
+          <div class="container">
+          <a href="studentoption.html">
+          <img src="goback-removebg-preview.png" width="150" height="120"></img>
+          </a>
+          <a href="homepage.html">
+          <img src="HTB1uj.wawsSMeJjSsphq6xuJFXaw-removebg-preview.png" width="150" height="120"></img>
+          </a>
+          </div>
+    </div>
+  </head>
+<!-- Linking the JavaScript file to this file -->
+<script src="studentview.js"></script>
+</body>
+</html>
